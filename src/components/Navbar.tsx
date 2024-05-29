@@ -1,8 +1,12 @@
 import Link from "next/link"
 import MaxWidthWrapper from "./MaxWidthWrapper"
 import { Icons } from "./Icons"
+import NavItems from "./NavItems"
 
 const Navbar = () => {
+
+const user = null
+
     return (
         <div className="bg-white sticky z-50 top-0 inset-x-0 h-16">
             <header className="relative bg-white">
@@ -16,6 +20,16 @@ const Navbar = () => {
                                     <Icons.logo />
                                </Link>
                             </div>
+
+                            <div className="hidden z-50 lg:ml-0 lg:block lg:self-stretch">
+                                <NavItems />
+                            </div>
+
+                            <div className="ml-auto flex items-center">
+                              <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                                
+                              </div>  
+                            </div>  
                         </div>
                     </div>
                 </MaxWidthWrapper>
